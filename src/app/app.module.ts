@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { BigbannerComponent } from './homepage/bigbanner/bigbanner.component';
 import { SmallbannerComponent } from './homepage/smallbanner/smallbanner.component';
+import { NavpageComponent } from './navpage/navpage.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SmallbannerComponent } from './homepage/smallbanner/smallbanner.compone
     FooterComponent,
     HomepageComponent,
     BigbannerComponent,
-    SmallbannerComponent
+    SmallbannerComponent,
+    NavpageComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
