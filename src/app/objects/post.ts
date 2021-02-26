@@ -3,7 +3,7 @@ export class Post {
   public text: string;
   public date: string;
   public author: string;
-  public post: Post[] = [];
+  // public post: Post[] = [];
 
 
   constructor(title: string, text: string, date: string, author: string) {
@@ -11,6 +11,6 @@ export class Post {
     this.text = text;
     this.date = date;
     this.author = author;
-    this.post = [];
+    // this.post = [];
   }
 }

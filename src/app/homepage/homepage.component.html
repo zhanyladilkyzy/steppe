@@ -4,8 +4,9 @@
       <app-bigbanner></app-bigbanner>
     </div>
     <div class="right-child">
-      <app-smallbanner [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>
-      <app-smallbanner [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>
+      <!-- <app-smallbanner [poster] = post [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>  -->
+      <app-smallbanner *ngFor="let pos of post">{{post}} [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>
+      
     </div>
 
 
