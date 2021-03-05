@@ -14,7 +14,9 @@ export class SmallbannerComponent implements OnInit {
   }
   @Input()
   poster: Post[] = [];
-  // @Output() 
+
+  toDate: Date = new Date();
+  // @Output()
   // newSmallBannerEvent = new EventEmitter<Post>();
 
   // showSmallBannerItems(post: Post) {
