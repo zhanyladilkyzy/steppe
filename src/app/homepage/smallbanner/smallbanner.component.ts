@@ -13,7 +13,7 @@ export class SmallbannerComponent implements OnInit {
   ngOnInit(): void {
   }
   @Input()
-  poster: Post[] = [];
+  pos: Post[] = [];
 
   toDate: Date = new Date();
   // @Output()
