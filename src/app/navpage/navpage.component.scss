@@ -1,21 +1,78 @@
+// @font-face {
+// font-family: 'Oranienbaum';
+// src: url("assets/fonts/'Oranienbaum-Regular'.otf") format("opentype");
+// }
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quicksand&display=swap');
+
 .header {
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 42px;
-    font-family: 'Oranienbaum',Georgia, Times;
+    font-family: 'Oranienbaum', Georgia, Times, Times New Roman, serif;
     h1{
         margin: 0 auto;
         padding: 0 60px;
+        font-weight: normal;
     }
 }
 
 .main{
     display: flex;
     // align-items: center;
-    // justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     padding: 10px;
+    font-family: Ringside-Narrow, Arial, Helvetica, Verdana, sans-serif;
+    font-weight: 700;
+}
 
+.left{
+  color: #ea2e34;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15em;
+  li{
+  border-left: 1px solid #d5d5cc;
+  padding: 10px 20px;
+  }
+
+//   height: 15%;
+  width: 15%;
+  //font-family: Ringside-Narrow, Arial, Helvetica, Verdana, sans-serif;
+  //padding: 0 0 0 20px;
+}
+.right{
+  border-top: 6px solid #000;
+  width: 80%;
+  img{
+      width: 100%;
+      height: 100%;
+  }
+  display: flex;
+  h3{
+    font-size: 40px;
+    font-family: 'Oranienbaum', Georgia, Times, Times New Roman, serif;
+    font-weight: normal;
+  }
+  h3:hover {
+    color: #ea2e34;
+  }
+}
+hr{
+margin: 5px;
+}
+.leed-left{
+  margin-right: 50px;
+}
+.leed-right{
+  width: 40%;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.box{
+    padding: 0 50px;
 }
