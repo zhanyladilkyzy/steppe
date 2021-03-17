@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quicksand&display=swap');
+
 .box {
   width: 100%;
 
@@ -15,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   .left {
     width: 60%;
     background: white;
@@ -23,5 +24,16 @@
   .right {
     padding: 150px 10px 10px;
     width: 50%;
+  }
+  a{
+      color: #000;
+      text-decoration: none;
+  }
+  a:hover{
+  color: #ea2e34;
+  }
+  h2{
+    font-size: 40px;
+    font-family: 'Oranienbaum', Grifinito, Georgia, Times, Times New Roman, serif;
   }
 }
