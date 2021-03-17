@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quicksand&display=swap');
+
+
+.logo{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1730px;
+}
+.footer{
+//    width: 100%;
+    background-color: #000;
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+//     border-bottom: 1px solid rgba(0,0,0,0.2);
+//     padding: 10px;
+    font-family: Chronicle, Georgia, Times, Times New Roman, serif;
+    //font-weight: 700;
+    h2{
+        font-size: 50px;
+        font-family: 'Oranienbaum', Georgia, Times, Times New Roman, serif;
+        font-weight: normal;
+    }
+}
+.footer-left{
+  width: 15%;
+  border-top: 6px solid #fff;
+}
+.footer-right{
+  width: 15%;
+  border-top: 6px solid #fff;
+}
+.footer-center{
+  border-top: 6px solid #fff;
+}
+input{
+    width: 60%;
+    background-color: #f5f5f2;
+    border-bottom: 0;
+    padding: 0 100px 0 20px;
+    height: 60px;
+    border: none;
+    font-family: Ringside-Narrow, Arial, Helvetica, Verdana, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .2px;
+        line-height: 1.3em;
+        color: black;
+}
+button{
+    border: none;
+    height: 60px;
+    font-family: Ringside-Narrow, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 1.3em;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #ea2e34;
+    padding: 15px;
+    -webkit-transition: color .2s, background-color .2s;
+    transition: color .2s, background-color .2s;
+}
+button:hover {
+    background-color: #000;
+}
+span{
+     font-family: Ringside-Narrow, Arial, Helvetica, Verdana, sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+//      letter-spacing: .2px;
+//      line-height: 1.3em;
+     color: #939385;
+     text-transform: uppercase;
+         margin: 15px 0;
+         //padding-left: 40px;
+         cursor: pointer;
+
+}
+.email{
+width: 100%;
+}
+.check{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #343434;
+}
