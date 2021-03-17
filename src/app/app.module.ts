@@ -10,6 +10,7 @@ import { BigbannerComponent } from './homepage/bigbanner/bigbanner.component';
 import { SmallbannerComponent } from './homepage/smallbanner/smallbanner.component';
 import { NavpageComponent } from './navpage/navpage.component';
 import { ErrorComponent } from './error/error.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorComponent } from './error/error.component';
     BigbannerComponent,
     SmallbannerComponent,
     NavpageComponent,
-    ErrorComponent
+    ErrorComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
