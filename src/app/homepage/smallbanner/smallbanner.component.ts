@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Post } from 'src/app/objects/post';
+import { LoggingService } from "../../services/logging.service";
+import { PostService } from "../../services/post.service";
+
 
 @Component({
   selector: 'app-smallbanner',
@@ -8,16 +11,21 @@ import { Post } from 'src/app/objects/post';
 })
 export class SmallbannerComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  post: Post[] = [];
+
+  constructor(private postService: PostService) { }
+ // postList: Post[];
 
   ngOnInit(): void {
+   // this.postList = this.postService.getPosts();
   }
-  @Input()
-  pos: Post[] = [];
+
 
   toDate: Date = new Date();
-  // @Output()
-  // newSmallBannerEvent = new EventEmitter<Post>();
+
+//   @Output()
+//   newSmallBannerEvent = new EventEmitter<Post>();
 
   // showSmallBannerItems(post: Post) {
   //     this.newSmallBannerEvent.emit(this.post);

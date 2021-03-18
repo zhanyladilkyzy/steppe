@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../objects/post';
+// import { LoggingService } from "../../services/logging.service";
+// import { PostService } from "../../services/post.service";
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +9,13 @@ import { Post } from '../objects/post';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+//
+// constructor(private postService: PostService) { }
+//   postList: Post[];
+//
+//   ngOnInit(): void {
+//     this.postList = this.postService.getPosts();
+//   }
   bigPost = new Post('Text text BigPost1', 'texttest tefdfsfj','10-20-2020' , 'author name');
   post: Post[] = [];
   constructor() {

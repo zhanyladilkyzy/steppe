@@ -3,13 +3,13 @@
     <div class="left-child">
       <app-bigbanner></app-bigbanner>
     </div>
-    <div class="right-child">
+    <div class="right-child" *ngIf = "post.length > 0">
       <!-- <app-smallbanner [poster] = post [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>  -->
       <app-smallbanner [ngStyle]="{'background': getColor()}" *ngFor="let pos of post">
 <!--        {{post.title}} [style.width]="'150px'" [style.height]="'60px'"-->
       </app-smallbanner>
-
     </div>
+    <p *ngIf="post.length == 0"> There is no content</p>
 
 
   </div>
