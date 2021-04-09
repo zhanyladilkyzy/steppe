@@ -11,21 +11,23 @@ import { PostService } from "../../services/post.service";
 })
 export class SmallbannerComponent implements OnInit {
 
-  @Input()
-  post: Post[] = [];
+  // @Input()
+  // post: Post[] = [];
 
-  constructor(private postService: PostService) { }
- // postList: Post[];
-
-  ngOnInit(): void {
-   // this.postList = this.postService.getPosts();
-  }
-
-
-  toDate: Date = new Date();
+  // constructor(private postService: PostService) { }
+  // postList: Post[] = [];
+  //
+ngOnInit(): void {
+  //  this.postList = this.postService.getPosts();
+}
+  //
+  //
+  // toDate: Date = new Date();
 
 //   @Output()
-//   newSmallBannerEvent = new EventEmitter<Post>();
+//   newSmallBannerEvent = new EventEmitter();
+//   message: string;
+//
 
   // showSmallBannerItems(post: Post) {
   //     this.newSmallBannerEvent.emit(this.post);

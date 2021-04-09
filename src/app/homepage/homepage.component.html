@@ -3,13 +3,25 @@
     <div class="left-child">
       <app-bigbanner></app-bigbanner>
     </div>
-    <div class="right-child" *ngIf = "post.length > 0">
+    <div class="right-child" *ngIf = "postList.length > 0">
       <!-- <app-smallbanner [poster] = post [style.width]="'150px'" [style.height]="'90px'"></app-smallbanner>  -->
-      <app-smallbanner [ngStyle]="{'background': getColor()}" *ngFor="let pos of post">
-<!--        {{post.title}} [style.width]="'150px'" [style.height]="'60px'"-->
-      </app-smallbanner>
+<!--      <app-smallbanner [ngStyle]="{'background': getColor()}" *ngFor="let pos of postList">-->
+<!--&lt;!&ndash;        {{post.title}} [style.width]="'150px'" [style.height]="'60px'"&ndash;&gt;-->
+<!--      </app-smallbanner>-->
+
+      <div class="box" *ngFor="let value of postList">
+        <div class="img-box" [ngStyle]="{'background': getColor()}">
+          <img src="assets/f1.jpg" alt="image post">
+        </div>
+        <div>
+          <!--  <h3 ><a routerLink = "/article">{{post.values(). | uppercase}}</a></h3>-->
+          <p >{{value.id}}</p>
+          <p >{{value.title}}</p>
+          <p> {{toDate | date:'short'}} </p>
+        </div>
+      </div>
     </div>
-    <p *ngIf="post.length == 0"> There is no content</p>
+    <p *ngIf="postList.length == 0"> There is no content</p>
 
 
   </div>
