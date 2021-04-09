@@ -15,7 +15,9 @@ import { ArticleComponent } from './article/article.component';
 import { PostService } from './services/post.service';
 import { LoggingService } from './services/logging.service';
 
-import { ArticleCanDeactivateGuardService } from './services/article-can-deactivate-guard.service'
+import { ArticleCanDeactivateGuardService } from './services/article-can-deactivate-guard.service';
+import { PostNotFoundComponent } from './post-not-found.component'
+import {PostDetailsGuardService} from "./services/post-details-guard.service";
 
 
 @NgModule({
@@ -28,13 +30,15 @@ import { ArticleCanDeactivateGuardService } from './services/article-can-deactiv
     SmallbannerComponent,
     NavpageComponent,
     ErrorComponent,
-    ArticleComponent
+    ArticleComponent,
+    PostNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [PostService, LoggingService, ArticleCanDeactivateGuardService],
+  providers: [PostService, LoggingService, ArticleCanDeactivateGuardService,
+              PostNotFoundComponent, PostDetailsGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

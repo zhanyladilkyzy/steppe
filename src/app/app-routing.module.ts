@@ -5,11 +5,14 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ErrorComponent } from './error/error.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticleCanDeactivateGuardService } from './services/article-can-deactivate-guard.service'
+import {PostNotFoundComponent} from "./post-not-found.component";
+import {PostDetailsGuardService} from "./services/post-details-guard.service";
 
 
 const routes: Routes = [{path: 'navpage', component: NavpageComponent},
-                        {path:'homepage', component: HomepageComponent},
+                        {path:'homepage', component: HomepageComponent, canActivate: [PostDetailsGuardService]},
                         {path:'article', component: ArticleComponent, canDeactivate: [ArticleCanDeactivateGuardService]},
+                        {path: 'notfound', component: PostNotFoundComponent},
                         {path:'', redirectTo:'homepage',pathMatch:'full'},
                         {path: '**', component: ErrorComponent}
                       ];
