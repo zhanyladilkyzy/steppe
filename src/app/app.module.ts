@@ -12,6 +12,12 @@ import { NavpageComponent } from './navpage/navpage.component';
 import { ErrorComponent } from './error/error.component';
 import { ArticleComponent } from './article/article.component';
 
+import { PostService } from './services/post.service';
+import { LoggingService } from './services/logging.service';
+
+import { ArticleCanDeactivateGuardService } from './services/article-can-deactivate-guard.service'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +34,7 @@ import { ArticleComponent } from './article/article.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PostService, LoggingService, ArticleCanDeactivateGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
