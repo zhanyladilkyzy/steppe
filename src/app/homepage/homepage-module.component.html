@@ -11,13 +11,18 @@
 
       <div class="box" *ngFor="let value of postList">
         <div class="img-box" [ngStyle]="{'background': getColor()}">
-          <img src="assets/f1.jpg" alt="image post">
+<!--          <img src="assets/f1.jpg" alt="image post">-->
         </div>
         <div>
+          <a routerLink = "/readarticle">
           <!--  <h3 ><a routerLink = "/article">{{post.values(). | uppercase}}</a></h3>-->
-          <p >{{value.id}}</p>
-          <p >{{value.title}}</p>
-          <p> {{toDate | date:'short'}} </p>
+<!--          <p >{{value.id}}</p>-->
+          <p>{{value.title}}</p>
+<!--          <p>{{value.text}}</p>-->
+          <p>{{value.date}}</p>
+          <p>{{value.author}}</p>
+          <!--          <p> {{toDate | date:'short'}} </p>-->
+          </a>
         </div>
       </div>
     </div>
