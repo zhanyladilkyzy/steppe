@@ -6,10 +6,10 @@ import {PostService} from "../services/post.service";
 
 @Component({
   selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  templateUrl: './homepage-module.component.html',
+  styleUrls: ['./homepage-module.component.scss']
 })
-export class HomepageComponent implements OnInit {
+export class HomepageModuleComponent implements OnInit {
   postList: Post[];
 
   constructor(public postService: PostService) {
