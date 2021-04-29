@@ -9,7 +9,7 @@
   <div class="footer-center">
     <h2>Подпишитесь на рассылку</h2>
     <p>Получай актуальные подборки новостей, узнавай о самом интересном в Steppe.</p>
-    <form action="">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="email">
         <input type="email" placeholder="Введите e-mail">
         <button type="submit" aria-label="Submit Email Address">Отправить

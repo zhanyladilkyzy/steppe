@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
-
+  contactForm = new FormGroup({
+    email: new FormControl('',[Validators.email, Validators.pattern("^@"), Validators.required]),
+  })
   ngOnInit(): void {
+  }
+  onSubmit() {
+    console.log("Subscribed email: "+ this.contactForm.value, this.contactForm.value.email);
+    return confirm('Are u sure to subscribe?');
   }
 
 }
