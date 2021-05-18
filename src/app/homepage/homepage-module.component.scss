@@ -15,6 +15,7 @@
 
 .right-child {
   width: 45%;
+  //height: 70px;
   padding: 0 10px 0;
   border-left: 1px solid black;
   display: flex;
@@ -23,18 +24,18 @@
   flex-wrap: wrap;
 
 }
-.box {
-  width: 150px;
-  height: 90px;
-}
+//.box {
+//  width: 150px;
+//  height: 90px;
+//}
 
-.img-box {
-  width: 100%;
-
-  img {
-    width: 100%;
-  }
-}
+//.img-box {
+//  width: 100%;
+//
+//  img {
+//    width: 100%;
+//  }
+//}
 
 p{
   margin: 10px;

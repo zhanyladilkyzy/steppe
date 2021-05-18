@@ -13,17 +13,29 @@
         <div class="img-box" [ngStyle]="{'background': getColor()}">
 <!--          <img src="assets/f1.jpg" alt="image post">-->
         </div>
-        <div>
-          <a routerLink = "/readarticle">
-          <!--  <h3 ><a routerLink = "/article">{{post.values(). | uppercase}}</a></h3>-->
-<!--          <p >{{value.id}}</p>-->
-          <p>{{value.title}}</p>
-<!--          <p>{{value.text}}</p>-->
-          <p>{{value.date}}</p>
-          <p>{{value.author}}</p>
-          <!--          <p> {{toDate | date:'short'}} </p>-->
-          </a>
+<!--        <div>-->
+<!--          <a routerLink = "/readarticle">-->
+<!--          &lt;!&ndash;  <h3 ><a routerLink = "/article">{{post.values(). | uppercase}}</a></h3>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p >{{value.id}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>{{value.title}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          <p>{{value.text}}</p>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>{{value.date}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>{{value.author}}</p>&ndash;&gt;-->
+<!--          &lt;!&ndash;          <p> {{toDate | date:'short'}} </p>&ndash;&gt;-->
+<!--          </a>-->
+<!--        </div>-->
+        <div class="card" style="width: 17rem; height: 190px;">
+          <div class="card-body">
+            <a routerLink = "/readarticle">
+            <h5 class="card-title">{{value.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{value.author}}</h6>
+            <p class="card-text">{{value.date}}</p>
+<!--            <a href="#" class="card-link">Card link</a>-->
+<!--            <a href="#" class="card-link">Another link</a>-->
+            </a>
+          </div>
         </div>
+
       </div>
     </div>
     <p *ngIf="postList.length == 0"> There is no content</p>
