@@ -16,7 +16,7 @@ export class ArticleComponent implements OnInit {
  // index = ["id", "title", "text", "date", "author"];
   index = [1,2,3,4,5]
   posts: Post[] = [];
-
+  images = ['h1.jpeg', 'h2.png', 'h3.jpeg', 'h4.jpeg', 'h5.png', 'h6.png', 'h7.jpeg'];
   ngOnInit(): void {
     this.rs.getPosts().subscribe
     (
@@ -29,6 +29,19 @@ export class ArticleComponent implements OnInit {
         console.log("ERROR: " + error);
       }
     )
+
+
   }
+
+
+  // getImage(){
+  //   let imageSrc = 'assets';
+  //   let imageAlt = 'image', images;
+  //
+  //   for (let img of images){
+  //     return imageSrc+'/'+img;
+  //   }
+  //   return imageSrc+'/'+'logo.svg';
+  // }
 
 }
